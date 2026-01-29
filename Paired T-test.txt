@@ -1,0 +1,13 @@
+# Paired T-test
+
+pair_t <- read_excel("C:/Users/acer/OneDrive/Desktop/AA/Advance_Analytics/pair_t.xlsx")
+attach(pair_t)
+
+# Structure of data
+str(pair_t)
+
+#Normarly distributed or not 
+shapiro.test(diff)
+
+# Paired t-test
+t.test(Bef,Aft,mu=0,paired = TRUE)

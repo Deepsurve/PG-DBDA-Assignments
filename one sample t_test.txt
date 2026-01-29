@@ -1,0 +1,31 @@
+"One Sample T-test"
+Indian_oil_ethanol <- read_excel("C:/Users/prathmesh/OneDrive/Desktop/CDAC_Assignment/Advance_Analytics/Indian oil_ethanol.xlsx")
+attach(Indian_oil_ethanol)
+
+"To find a Structure of data"
+str(Indian_oil_ethanol)
+
+# Assumptions
+str(`Mileage with ethanol`)
+library(moments) # used to get the & kurtosis
+skewness(`Mileage with ethanol`)
+kurtosis(`Mileage with ethanol`)
+hist(`Mileage with ethanol`)
+  
+# Shapiro.wilk normality test
+shapiro.test(`Mileage with ethanol`)
+
+# lillie test
+library(nortest)
+lillie.test(`Mileage with ethanol`)
+
+# Anderson-Darling test
+ad.test(`Mileage with ethanol`)
+
+# One-Sample t-test
+t.test(`Mileage with ethanol`, mu=12)
+sd(`Mileage with ethanol`)
+mean(`Mileage with ethanol`)
+t.test(`Mileage with ethanol`,mu =12,alternative = c("two.sided"),conf.level = 0.99)
+t.test(`Mileage with ethanol`,mu=12,alternative = c("greater"),conf.level=0.95)
+t.test(`Mileage with ethanol`,mu=12,alternative = c("less"),conf.level=0.95)

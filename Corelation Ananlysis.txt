@@ -1,0 +1,19 @@
+# Corelation Ananlysis
+
+CoRelation <- read_excel("C:/Users/prathmesh/OneDrive/Desktop/CDAC_Assignment/Advance_Analytics/Correlation_analysis/Correlation Analsyis.xlsx")
+attach(CoRelation)
+
+# Structure of data
+str(CoRelation)
+
+# Normality Test
+shapiro.test(`General Knowledge`)
+shapiro.test(`College Examination Marks`)
+
+# scatter plot finding - For checking Linearity
+plot(`General Knowledge`,`College Examination Marks`)
+boxplot(`General Knowledge`)
+boxplot(`College Examination Marks`)
+
+# Analysis
+cor.test(`General Knowledge`,`College Examination Marks`)
