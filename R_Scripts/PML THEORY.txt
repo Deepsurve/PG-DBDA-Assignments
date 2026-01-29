@@ -1,0 +1,13 @@
+LLM working(GPT Architecture explaination)
+LLM chat bot working 
+Self attention mechanism (4 tYPES)
+ML algorithms 
+neural networks 
+CNN
+TRANSFORMEr architecture 
+pytorch vs Tensor flow 
+activation functions 
+vanishing gradient problem 
+regularization 
+
+
